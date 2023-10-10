@@ -1,0 +1,20 @@
+#sidebarMenu {
+    height: 100%; /* Ajusta la altura como desees o utiliza max-height */
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh; /* Establece una altura máxima del 80% del viewport height */
+    overflow-y: auto;
+    }
+    #sidebarMenu .sidebarMenuInner li {
+    padding: 13.9px;
+    }
+    .sidebarMenuInner {
+    flex-grow: 1;
+    overflow-y: auto;
+    }
+    /* Ajusta la altura máxima del menú en función del tamaño de la ventana */
+    @media screen and (max-height: 600px) {
+    #sidebarMenu {
+        max-height: 350px; /* Ajusta esta altura para pantallas más pequeñas */
+    }
+    }
